@@ -1,0 +1,19 @@
+.p{
+   color:black;
+   font-weight: 500;
+   font-size: 1.2rem;
+   
+}
+.mean{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.imc{
+    background-color: rgb(132, 55, 204);
+    padding: 10px;
+    border-radius: 6px;
+    color :white;
+}

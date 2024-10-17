@@ -1,0 +1,27 @@
+.page {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  height: 400px;
+}
+.allCards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: var(--font-geist-sans);
+  max-width: 700px;
+  width: 100%;
+  gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .allCards{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .page {
+   height: 900px;
+  }
+}
+
