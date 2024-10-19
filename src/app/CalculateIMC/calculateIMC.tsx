@@ -19,6 +19,7 @@ export function Imc({ OnCalculate }: ImcType) {
 
     useEffect(() => {
         handleZero();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [imcValue.height, imcValue.weight]);
 
     const handleHeightInput = (event: ChangeEvent<HTMLInputElement>) => {
@@ -54,6 +55,7 @@ export function Imc({ OnCalculate }: ImcType) {
     };
 
     const handleCalculate = () => {
+        if(imcValue.height.trim()=='' || imcValue.weight.trim()=='') return
         const imc = Number(imcValue.weight) / (Number(imcValue.height) * Number(imcValue.height));
 
         let typeInfo: TypeInfo;

@@ -3,25 +3,49 @@
   width: 100%;
   display: flex;
   margin-top: 10px;
-  height: 400px;
+  height: 70vh;
 }
-.allCards{
+
+.allCards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   font-family: var(--font-geist-sans);
-  max-width: 700px;
+  max-width: 98vw;
   width: 100%;
   gap: 10px;
 }
 
+/* Estilos para telas pequenas */
 @media screen and (max-width: 600px) {
-  .allCards{
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .page {
-   height: 900px;
+  .allCards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 195px);
   }
 }
 
+/* Estilos para telas altas */
+@media (min-height: 1000px) {
+  .allCards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .page {
+      height: 80vh;
+  }
+}
+
+/* Estilos para telas médias */
+@media (min-width: 820px) and (max-height: 1180px) {
+  .allCards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      max-width: 98vw;
+  }
+  
+  .page {
+      height: 80vh;
+      max-width: 98vw;
+  }
+}
