@@ -1,19 +1,22 @@
 .page {
-  max-width: 700px;
   width: 100%;
   display: flex;
   margin-top: 10px;
   height: 70vh;
+  
 }
-
+.imcCard{
+  width: 100%;
+}
 .allCards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   font-family: var(--font-geist-sans);
   max-width: 98vw;
-  width: 100%;
+  min-width: 100%;
   gap: 10px;
+  
 }
 
 /* Estilos para telas pequenas */
@@ -21,6 +24,7 @@
   .allCards {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 195px);
+      
   }
 }
 
@@ -29,6 +33,7 @@
   .allCards {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
+      
   }
   
   .page {

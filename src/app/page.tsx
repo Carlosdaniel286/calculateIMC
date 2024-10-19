@@ -42,11 +42,7 @@ export default function Home() {
           </div>
         ) : (
           <div
-          style={{
-            width:'700px',
-            height:'400px',
-            background:"blue"
-          }}
+          className={styles.imcCard}
           >
           <Card 
           typeInfo={imcType} 

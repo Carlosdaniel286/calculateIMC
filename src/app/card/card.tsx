@@ -31,6 +31,7 @@ export function Card({ typeInfo,imc }: CardTypes) {
       default:
         setStyleCard({});
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ typeInfo]); // O efeito será executado toda vez que typeInfo mudar
 
   return (
